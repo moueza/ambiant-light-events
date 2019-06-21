@@ -4,7 +4,7 @@ if ('ondevicelight' in window) {
     
     
     
-    var element = document.getElementById("toPrint").innerHTML="toPrint";
+   document.getElementById("toPrint").innerHTML="toPrint";
     
     
     if (event.value < 50) {
