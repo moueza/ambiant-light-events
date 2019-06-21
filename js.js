@@ -2,7 +2,7 @@
 
 document.getElementById("toPrint").innerHTML = "toPrint";
 
-document.getElementById("versionn").innerHTML = "version=13";
+document.getElementById("versionn").innerHTML = "version=14";
 
 
 if ('ondevicelight' in window) {
