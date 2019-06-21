@@ -1,10 +1,13 @@
+
+    
+   document.getElementById("toPrint").innerHTML="toPrint";
+
+
 if ('ondevicelight' in window) {
   window.addEventListener('devicelight', function(event) {
     var body = document.querySelector('body');
     
     
-    
-   document.getElementById("toPrint").innerHTML="toPrint";
     
     
     if (event.value < 50) {
