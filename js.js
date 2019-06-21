@@ -1,6 +1,8 @@
 
     
    document.getElementById("toPrint").innerHTML="toPrint";
+   
+   document.getElementById("versionn").innerHTML="version=10";
 
 
 if ('ondevicelight' in window) {
