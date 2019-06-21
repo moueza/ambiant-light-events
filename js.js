@@ -8,13 +8,16 @@ document.getElementById("versionn").innerHTML = "version=13";
 if ('ondevicelight' in window) {
 
     document.getElementById("statuss").innerHTML = "lightSensor OK";
+    var vall = DeviceLightEvent.valueOf();
 
     window.addEventListener('devicelight', function (event) {
         var body = document.querySelector('body');
-
-
-
         document.getElementById("beforeLevel").innerHTML = "lightSensor before level";
+        document.getElementById("valuee").innerHTML = val;
+            
+        
+        
+        
         if (event.value < 50) {
             document.getElementById("valuee").innerHTML = "lightSensor level min50";
 
