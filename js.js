@@ -2,7 +2,7 @@
     
    document.getElementById("toPrint").innerHTML="toPrint";
    
-   document.getElementById("versionn").innerHTML="version=10";
+   document.getElementById("versionn").innerHTML="version=11";
 
 
 if ('ondevicelight' in window) {
@@ -16,12 +16,12 @@ if ('ondevicelight' in window) {
     
     
     if (event.value < 50) {
-          document.getElementById("valuee").innerHTML="lightSensor <50";
+          document.getElementById("valuee").innerHTML="lightSensor level min50";
 
       body.classList.add('darklight');
       body.classList.remove('brightlight');
     } else {
-                document.getElementById("valuee").innerHTML="lightSensor >50";
+                document.getElementById("valuee").innerHTML="lightSensor level up50";
       body.classList.add('brightlight');
       body.classList.remove('darklight');
     }
