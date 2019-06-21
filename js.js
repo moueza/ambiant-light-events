@@ -1,6 +1,12 @@
 if ('ondevicelight' in window) {
   window.addEventListener('devicelight', function(event) {
     var body = document.querySelector('body');
+    
+    
+    
+    var element = document.getElementById("toPrint").innerHTML="toPrint";
+    
+    
     if (event.value < 50) {
       body.classList.add('darklight');
       body.classList.remove('brightlight');
