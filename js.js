@@ -34,3 +34,12 @@ if ('ondevicelight' in window) {
 
     console.log('devicelight event not supported');
 }
+
+
+
+
+
+function playSound() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
