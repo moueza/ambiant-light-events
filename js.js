@@ -42,4 +42,5 @@ if ('ondevicelight' in window) {
 function playSound() {
           var sound = document.getElementById("audio");
           sound.play();
+      sound.play();
       }
