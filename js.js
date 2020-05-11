@@ -59,3 +59,20 @@ function playSound() {
     sound.play(); console.log('lbl128 play2');
 }
 console.log('lbl24 fin');
+
+var  mySound2;
+//https://www.w3schools.com/graphics/game_sound.asp
+function playSound2() {
+     mySound2 = new sound("http://www.soundjay.com/button/beep-07.wav");
+    console.log('lbl5120 in playSound()');  console.log('lbl124 play1');
+
+   mySound2.play();
+    
+    
+    //https://www.w3schools.com/js/js_timing.asp
+    setTimeout(function(){
+	console.log('timeout');
+    }, 1000);
+
+    mySound2.play();  console.log('lbl5128 play2');
+}
