@@ -1,45 +1,63 @@
 <html>
   <head>
     <!-- for Bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   </head>
   
-<body>
- 
-  
-  Hello people
+  <body>
+    
+    
+    Hello people
 
 
 
-  v4
-  <div id="toPrint">
-   </div>
-  
-  <div id="versionn">
-   </div>
-  
+    v4
+    <div id="toPrint">
+    </div>
+    
+    <div id="versionn">
+    </div>
+    
     <div id="statuss">
-   </div>
-  
-  
-   <div id="beforeLevel">
-   </div>
+    </div>
+    
+    
+    <div id="beforeLevel">
+    </div>
     <div id="valuee">
-   </div>
-  
-  <!-- Plunker link https://stackoverflow.com/questions/29567580/play-a-beep-sound-on-button-click-->
-  <div id="sound">
-   <audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autostart="false" ></audio>
-    <a onclick="playSound2()"> Play</a>
-  <div id="">
+    </div>
+    
+    <!-- Plunker link https://stackoverflow.com/questions/29567580/play-a-beep-sound-on-button-click-->
+    <div id="sound">
+      <audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autostart="false" ></audio>
+      <a onclick="playSound2()"> Play2</a>
+       <a onclick="playSound3()"> Play3</a>
+      <div id="">
 
-    <script src="js.js"></script>
+	<script src="js.js"></script>
+	<script>
 
+	  function playSound3() {
+	  mySound2 = new sound("http://www.soundjay.com/button/beep-07.wav");
+	  console.log('lbl5120 in playSound()');  console.log('lbl124 play1');
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	  mySound2.play();
+	  
+	  
+	  //https://www.w3schools.com/js/js_timing.asp
+	  setTimeout(function(){
+	  console.log('timeout');
+	  }, 1000);
+
+	  mySound2.play();  console.log('lbl5128 play2');
+	  }
+	</script>
+	
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
 

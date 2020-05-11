@@ -1,5 +1,5 @@
 
-
+var  mySound2;
 document.getElementById("toPrint").innerHTML = "toPrint";
 
 document.getElementById("versionn").innerHTML = "version=14";
@@ -60,7 +60,7 @@ function playSound() {
 }
 console.log('lbl24 fin');
 
-var  mySound2;
+
 //https://www.w3schools.com/graphics/game_sound.asp
 function playSound2() {
      mySound2 = new sound("http://www.soundjay.com/button/beep-07.wav");
