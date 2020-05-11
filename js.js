@@ -30,6 +30,7 @@ if ('ondevicelight' in window) {
         }
     });
 } else {
+    //TODO JQuery
     document.getElementById("statuss").innerHTML = "lightSensor KO";
 
     console.log('devicelight event not supported');
@@ -42,5 +43,9 @@ if ('ondevicelight' in window) {
 function playSound() {
           var sound = document.getElementById("audio");
           sound.play();
+    
+    
+    //https://www.w3schools.com/js/js_timing.asp
+    setTimeout((){console.log('timeout');}, 1000)
       sound.play();
       }
