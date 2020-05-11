@@ -4,17 +4,18 @@ document.getElementById("toPrint").innerHTML = "toPrint";
 
 document.getElementById("versionn").innerHTML = "version=14";
 
-
+console.log('lbl12 AV');
 if ('ondevicelight' in window) {
 
-    document.getElementById("statuss").innerHTML = "lightSensor OK";
+    document.getElementById("statuss"
+			   ).innerHTML = "lightSensor OK";
     var vall = DeviceLightEvent.valueOf();
 
     window.addEventListener('devicelight', function (event) {
         var body = document.querySelector('body');
         document.getElementById("beforeLevel").innerHTML = "lightSensor before level";
         document.getElementById("valuee").innerHTML = val;
-            
+        
         
         
         
@@ -38,14 +39,23 @@ if ('ondevicelight' in window) {
 
 
 
+console.log('lbl18 milieu');
 
 
 function playSound() {
-          var sound = document.getElementById("audio");
-          sound.play();
+    console.log('lbl120 in playSound()');  console.log('lbl124 play1');
+
+
+    var sound = document.getElementById("audio");
+    sound.play();
     
     
     //https://www.w3schools.com/js/js_timing.asp
-    setTimeout((){console.log('timeout');}, 1000)
-      sound.play();
-      }
+    setTimeout(function(){
+	console.log('timeout');
+    }, 1000);
+
+    
+    sound.play(); console.log('lbl128 play2');
+}
+console.log('lbl24 fin');
